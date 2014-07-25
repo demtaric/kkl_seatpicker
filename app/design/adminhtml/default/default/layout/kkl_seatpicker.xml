@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<layout>
+    <seatpicker_seatpicker_index>
+        <reference name="left">
+            <block type="kkl_seatpicker/adminhtml_mapping_edit_tabs" name="seatpicker_tabs"/>
+        </reference>
+        <reference name="content">
+            <block type="kkl_seatpicker/adminhtml_mapping_edit" name="seatpicker_edit"/>
+        </reference>
+    </seatpicker_seatpicker_index>
+</layout>

@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<config>
+    <menu>
+        <seat_picker translate="title" module="kkl_seatpicker">
+            <title>Seat Picker</title>
+            <sort_order>75</sort_order>
+            <action>seatpicker/seatpicker</action>
+        </seat_picker>
+    </menu>
+    <acl>
+        <resources>
+            <all>
+                <title>Allow Everything</title>
+            </all>
+            <admin>
+                <children>
+                    <system>
+                        <children>
+                            <config>
+                                <children>
+                                    <kkl>
+                                        <title>KKL - All</title>
+                                    </kkl>
+                                </children>
+                            </config>
+                        </children>
+                    </system>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+</config>

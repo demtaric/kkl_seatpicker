@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<config>
+    <tabs>
+        <seat_picker translate="label" module="kkl_seatpicker">
+            <label>KKL Extensions</label>
+            <sort_order>100</sort_order>
+        </seat_picker>
+    </tabs>
+    <sections>
+        <kkl translate="label" module="kkl_seatpicker">
+            <label>Extension Options</label>
+            <tab>seat_picker</tab>
+            <sort_order>1000</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <groups>
+                <kkl_group translate="label" module="kkl_seatpicker">
+                    <label>Seat Picker Options</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>1000</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <sectors translate="label">
+                            <label>Sectors</label>
+                            <frontend_model>kkl_seatpicker/sectors</frontend_model>
+                            <backend_model>adminhtml/system_config_backend_serialized_array</backend_model>
+                            <!--<source_model>kkl_seatpicker/system_config_source_sectors</source_model>-->
+                            <sort_order>100</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </sectors>
+                        <locations translate="label">
+                            <label>Locations</label>
+                            <frontend_model>kkl_seatpicker/locations</frontend_model>
+                            <backend_model>adminhtml/system_config_backend_serialized_array</backend_model>
+                            <!--<source_model>kkl_seatpicker/system_config_source_sectors</source_model>-->
+                            <sort_order>100</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </locations>
+                    </fields>
+                </kkl_group>
+            </groups>
+        </kkl>
+    </sections>
+</config>

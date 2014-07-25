@@ -1,0 +1,32 @@
+<?php $_sectors = $this->getLocations(); ?>
+<?php $_locationMapping = $this->getLocationMapping(); ?>
+<div class="entry-edit-head">
+    <h4 class="icon-head head-edit-form fieldset-legend"><?php echo $this->__("Showare Locations to SP Locations") ?></h4>
+</div>
+<fieldset>
+    <legend><?php echo $this->__("Location Mapping") ?></legend>
+    <span class="field-row">
+        <label for="loc_a"><?php echo $this->__("LOC_A:") ?></label>
+        <select id="loc_a" name="loc_a">
+            <?php foreach ($_sectors as $_value) : ?>
+                <option value="<?php echo $_value['sector']?>"<?php if($_locationMapping['loc_a'] == $_value['sector']) :?> selected="selected" <?php endif; ?>><?php echo $_value['sector']?></option>
+            <?php endforeach; ?>
+        </select>
+    </span>
+    <span class="field-row">
+        <label for="loc_b"><?php echo $this->__("LOC_B:") ?></label>
+        <select id="loc_b" name="loc_b">
+            <?php foreach ($_sectors as $_value) : ?>
+                <option value="<?php echo $_value['sector']?>"<?php if($_locationMapping['loc_b'] == $_value['sector']) :?> selected="selected" <?php endif; ?>><?php echo $_value['sector']?></option>
+            <?php endforeach; ?>
+        </select>
+    </span>
+    <span class="field-row">
+        <label for="loc_c"><?php echo $this->__("LOC_C:") ?></label>
+        <select id="loc_c" name="loc_c">
+            <?php foreach ($_sectors as $_value) : ?>
+                <option value="<?php echo $_value['sector']?>"<?php if($_locationMapping['loc_c'] == $_value['sector']) :?> selected="selected" <?php endif; ?>><?php echo $_value['sector']?></option>
+            <?php endforeach; ?>
+        </select>
+    </span>
+</fieldset>
